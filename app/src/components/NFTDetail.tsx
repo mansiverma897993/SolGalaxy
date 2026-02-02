@@ -30,6 +30,12 @@ export default function NFTDetail({ nft, onBuy }: NFTDetailProps) {
           <img
             src={nft.image}
             alt={nft.name}
+            loading="lazy"
+            onError={(e) => {
+              const target = e.currentTarget as HTMLImageElement
+              target.onerror = null
+              target.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="%239945FF"/><stop offset="1" stop-color="%2314F195"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g2)" rx="12" ry="12"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="28">No Image Available</text></svg>'
+            }}
             className="w-full h-full object-cover"
           />
         </div>

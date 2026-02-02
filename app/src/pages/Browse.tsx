@@ -20,7 +20,7 @@ const mockNFTs: NFT[] = [
   {
     id: '1',
     name: 'Cosmic Voyager #001',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8e7e942f?w=400&h=400&fit=crop',
+    image: '/assets/nft-1.svg',
     price: 2.5,
     creator: 'SolArtist',
     collection: 'Cosmic Series',
@@ -29,7 +29,7 @@ const mockNFTs: NFT[] = [
   {
     id: '2',
     name: 'Digital Dream #042',
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=400&fit=crop',
+    image: '/assets/nft-2.svg',
     price: 1.2,
     creator: 'PixelMaster',
     collection: 'Genesis Collection',
@@ -38,7 +38,7 @@ const mockNFTs: NFT[] = [
   {
     id: '3',
     name: 'Neon Genesis #007',
-    image: 'https://images.unsplash.com/photo-1611339555312-e607c25352ca?w=400&h=400&fit=crop',
+    image: '/assets/nft-3.svg',
     price: 0.8,
     creator: 'NeonWizard',
     collection: 'Rare Gems',
@@ -47,7 +47,7 @@ const mockNFTs: NFT[] = [
   {
     id: '4',
     name: 'Aurora Glow #156',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=400&h=400&fit=crop',
+    image: '/assets/nft-4.svg',
     price: 3.5,
     creator: 'LightBringer',
     collection: 'Cosmic Series',
@@ -56,7 +56,7 @@ const mockNFTs: NFT[] = [
   {
     id: '5',
     name: 'Quantum Leap #089',
-    image: 'https://images.unsplash.com/photo-1633878669159-289d91451872?w=400&h=400&fit=crop',
+    image: '/assets/nft-5.svg',
     price: 0.5,
     creator: 'QuantumDev',
     collection: 'Limited Edition',
@@ -65,7 +65,7 @@ const mockNFTs: NFT[] = [
   {
     id: '6',
     name: 'Stellar Crown #023',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8e7e942f?w=400&h=400&fit=crop',
+    image: '/assets/nft-6.svg',
     price: 4.2,
     creator: 'CosmicKing',
     collection: 'Rare Gems',
@@ -74,7 +74,7 @@ const mockNFTs: NFT[] = [
   {
     id: '7',
     name: 'Mystic Void #112',
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=400&fit=crop',
+    image: '/assets/nft-7.svg',
     price: 1.8,
     creator: 'VoidWalker',
     collection: 'Genesis Collection',
@@ -83,7 +83,7 @@ const mockNFTs: NFT[] = [
   {
     id: '8',
     name: 'Infinity Loop #301',
-    image: 'https://images.unsplash.com/photo-1611339555312-e607c25352ca?w=400&h=400&fit=crop',
+    image: '/assets/nft-8.svg',
     price: 0.9,
     creator: 'InfinityBound',
     collection: 'Limited Edition',

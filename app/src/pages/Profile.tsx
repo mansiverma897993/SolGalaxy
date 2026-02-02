@@ -16,21 +16,21 @@ const mockProfileNFTs: ProfileNFT[] = [
   {
     id: '1',
     name: 'Cosmic Voyager #001',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8e7e942f?w=200&h=200&fit=crop',
+    image: '/assets/nft-1.svg',
     price: 2.5,
     collection: 'Cosmic Series',
   },
   {
     id: '2',
     name: 'Digital Dream #042',
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=200&h=200&fit=crop',
+    image: '/assets/nft-2.svg',
     price: 1.2,
     collection: 'Genesis Collection',
   },
   {
     id: '3',
     name: 'Neon Genesis #007',
-    image: 'https://images.unsplash.com/photo-1611339555312-e607c25352ca?w=200&h=200&fit=crop',
+    image: '/assets/nft-3.svg',
     price: 0.8,
     collection: 'Rare Gems',
   },
@@ -145,6 +145,12 @@ export default function Profile() {
                   <img
                     src={nft.image}
                     alt={nft.name}
+                    loading="lazy"
+                    onError={(e) => {
+                      const target = e.currentTarget as HTMLImageElement
+                      target.onerror = null
+                      target.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><defs><linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="%239945FF"/><stop offset="1" stop-color="%2314F195"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g3)" rx="12" ry="12"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="18">No Image</text></svg>'
+                    }}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
